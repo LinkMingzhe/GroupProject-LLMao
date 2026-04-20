@@ -1,0 +1,57 @@
+# OS / editors
+.DS_Store
+.idea/
+.vscode/
+.zed/
+
+# Python cache / build artifacts
+__pycache__/
+*.py[cod]
+*.so
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+build/
+dist/
+*.egg-info/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+*/.venv/
+*/venv/
+
+# Local auth, logs, notebooks, keys
+.auth/
+*.log
+*.ipynb
+*.pem
+*.key
+
+# Large local runtime artifacts
+.docker-images/
+webarena_prompt_injections/output/
+webarena_prompt_injections/outputs/
+visualwebarena/results/
+visualwebarena/log_files/
+
+# Downloaded environment archives
+*.tar
+*.tar.gz
+*.tgz
+*.zip
+
+# VisualWebArena generated configs
+visualwebarena/config_files/vwa/test_classifieds/
+visualwebarena/config_files/vwa/test_shopping/
+visualwebarena/config_files/vwa/test_reddit/
+visualwebarena/config_files/vwa/test_classifieds.json
+visualwebarena/config_files/vwa/test_reddit.json
+visualwebarena/config_files/vwatest_shopping.json
+visualwebarena/config_files/wa/test_webarena/
+visualwebarena/config_files/wa/test_webarena.json
