@@ -1,7 +1,7 @@
 
 This the open source code from group LLMao. 
 
-The project title: Mining Instruction Patterns that Trigger Unsafe Behavior in Autonomous Web Agents
+The project title: Mining Instruction Patterns that Trigger Unsafe Behavior in Autonomous Web Agents.
 
 ## Quantitative Results
 
