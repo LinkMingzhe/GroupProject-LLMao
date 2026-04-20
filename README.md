@@ -27,7 +27,6 @@ Set the shared runtime variables before running any site:
 ```bash
 export DATASET=webarena_prompt_injections
 export GEMINI_API_KEY="<your_gemini_api_key>"
-export STAGE3_MODEL=gemini-2.5-flash
 ```
 
 You can also use `.env.example` as a starting point.
