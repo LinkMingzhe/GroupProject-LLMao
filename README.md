@@ -1,22 +1,7 @@
-# WASP Release Repo
 
-This folder is a sanitized GitHub release copy of the WASP project for prompt-injection evaluation on WebArena-style websites.
+This the open source code from group LLMao. 
 
-What is intentionally excluded from this release:
-
-- `.docker-images/`
-- `webarena_prompt_injections/output/`
-- local virtual environments
-- local auth cookies in `.auth/`
-- notebooks, logs, and private keys
-
-## Release defaults
-
-- Agent model: `gemini-3.1-pro-preview`
-- Step-by-step evaluator model: `gemini-2.5-flash`
-- Dataset mode: `webarena_prompt_injections`
-
-The evaluator model is controlled by `STAGE3_MODEL`. In all commands below, the agent is `gemini-3.1-pro-preview` and the evaluator is `gemini-2.5-flash`.
+The project title: Mining Instruction Patterns that Trigger Unsafe Behavior in Autonomous Web Agents
 
 ## Prerequisites
 
