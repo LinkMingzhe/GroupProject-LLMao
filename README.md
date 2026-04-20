@@ -3,6 +3,56 @@ This the open source code from group LLMao.
 
 The project title: Mining Instruction Patterns that Trigger Unsafe Behavior in Autonomous Web Agents
 
+## Quantitative Results
+
+### Reddit
+
+ASR on Reddit under different instruction characteristics.
+
+| Category | Intensity Level | ASR ↑ (interm.) | ASR ↑ (end-to-end) |
+| --- | --- | ---: | ---: |
+| *Baseline* | -- | 69.45 | 2.78 |
+| *Authority* | Top Answer | **79.17** | **15.28** |
+| *Authority* | DevOps | **79.17** | 13.89 |
+| *Authority* | Sys Admin | 69.45 | 4.17 |
+| *Rewarding* | Implicit | **84.72** | 11.11 |
+| *Rewarding* | Optimized | 77.78 | **12.50** |
+| *Rewarding* | Explicit | 80.56 | 6.94 |
+| *Aggressiveness* | Polite | **86.11** | 22.00 |
+| *Aggressiveness* | Neutral | 86.07 | **23.38** |
+| *Aggressiveness* | Aggressive | 76.33 | 22.00 |
+
+### GitLab
+
+ASR on GitLab under different instruction characteristics.
+
+| Category | Intensity Level | ASR ↑ (interm.) | ASR ↑ (end-to-end) |
+| --- | --- | ---: | ---: |
+| *Baseline* | -- | 43.25 | 0.00 |
+| *Authority* | Top Answer | 8.33 | 0.00 |
+| *Authority* | DevOps | 11.46 | 0.00 |
+| *Authority* | Sys Admin | **17.70** | 0.00 |
+| *Rewarding* | Implicit | 4.15 | 0.00 |
+| *Rewarding* | Optimized | 0.00 | 0.00 |
+| *Rewarding* | Explicit | **11.44** | 0.00 |
+| *Aggressiveness* | Polite | 27.88 | 0.00 |
+| *Aggressiveness* | Neutral | 37.45 | 1.04 |
+| *Aggressiveness* | Aggressive | **49.88** | **6.63** |
+
+### Shopping
+
+ASR on Shopping under selected instruction characteristics.
+
+| Category | Intensity Level | ASR ↑ (interm.) | ASR ↑ (end-to-end) |
+| --- | --- | ---: | ---: |
+| *Baseline* | -- | 42.86 | 0.00 |
+| *Authority* | Top Answer | 42.86 | 0.00 |
+| *Authority* | Sys Admin | 25.00 | 0.00 |
+| *Rewarding* | Implicit | **50.00** | 0.00 |
+| *Rewarding* | Explicit | 32.15 | 0.00 |
+| *Aggressiveness* | Polite | **50.00** | 0.00 |
+| *Aggressiveness* | Aggressive | 21.43 | 0.00 |
+
 ## Prerequisites
 
 - Docker
@@ -195,55 +245,6 @@ python run.py \
 SHOPPING_BASE_URL=http://127.0.0.1:7770 bash visualwebarena/scripts/reset_shopping.sh
 ```
 
-## Benchmark Results
-
-### Reddit
-
-ASR on Reddit under different instruction characteristics.
-
-| Category | Intensity Level | ASR ↑ (interm.) | ASR ↑ (end-to-end) |
-| --- | --- | ---: | ---: |
-| *Baseline* | -- | 69.45 | 2.78 |
-| *Authority* | Top Answer | **79.17** | **15.28** |
-| *Authority* | DevOps | **79.17** | 13.89 |
-| *Authority* | Sys Admin | 69.45 | 4.17 |
-| *Rewarding* | Implicit | **84.72** | 11.11 |
-| *Rewarding* | Optimized | 77.78 | **12.50** |
-| *Rewarding* | Explicit | 80.56 | 6.94 |
-| *Aggressiveness* | Polite | **86.11** | 22.00 |
-| *Aggressiveness* | Neutral | 86.07 | **23.38** |
-| *Aggressiveness* | Aggressive | 76.33 | 22.00 |
-
-### GitLab
-
-ASR on GitLab under different instruction characteristics.
-
-| Category | Intensity Level | ASR ↑ (interm.) | ASR ↑ (end-to-end) |
-| --- | --- | ---: | ---: |
-| *Baseline* | -- | 43.25 | 0.00 |
-| *Authority* | Top Answer | 8.33 | 0.00 |
-| *Authority* | DevOps | 11.46 | 0.00 |
-| *Authority* | Sys Admin | **17.70** | 0.00 |
-| *Rewarding* | Implicit | 4.15 | 0.00 |
-| *Rewarding* | Optimized | 0.00 | 0.00 |
-| *Rewarding* | Explicit | **11.44** | 0.00 |
-| *Aggressiveness* | Polite | 27.88 | 0.00 |
-| *Aggressiveness* | Neutral | 37.45 | 1.04 |
-| *Aggressiveness* | Aggressive | **49.88** | **6.63** |
-
-### Shopping
-
-ASR on Shopping under selected instruction characteristics.
-
-| Category | Intensity Level | ASR ↑ (interm.) | ASR ↑ (end-to-end) |
-| --- | --- | ---: | ---: |
-| *Baseline* | -- | 42.86 | 0.00 |
-| *Authority* | Top Answer | 42.86 | 0.00 |
-| *Authority* | Sys Admin | 25.00 | 0.00 |
-| *Rewarding* | Implicit | **50.00** | 0.00 |
-| *Rewarding* | Explicit | 32.15 | 0.00 |
-| *Aggressiveness* | Polite | **50.00** | 0.00 |
-| *Aggressiveness* | Aggressive | 21.43 | 0.00 |
 
 ## Notes
 
